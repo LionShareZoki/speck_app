@@ -1,10 +1,18 @@
 # [Tech List](https://techlist.netlify.app/)
 
+<<<<<<< HEAD
 A simple React app that allows users to add and remove items from a list of technologies.
 
 ## Introduction
 
-Tech List is a basic React app that lets users input technology items and add them to a list. They can remove individual items or clear the entire list. The app was built using React hooks and functional components.
+=======
+
+A simple React app that allows users to add and remove items from a list of technologies.
+
+## Introduction
+
+> > > > > > > 8e0a32df9d25c8b21896269f74101510f1737763
+> > > > > > > Tech List is a basic React app that lets users input technology items and add them to a list. They can remove individual items or clear the entire list. The app was built using React hooks and functional components.
 
 ## Features
 
