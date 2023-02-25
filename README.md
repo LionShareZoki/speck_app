@@ -45,4 +45,4 @@ Tech List requires the following to run:
   
 4. Add technology items to the list by typing them in the input field and clicking the "ADD" button. Remove individual items by clicking on them, or clear the entire list by clicking the "Remove all items" button.
 
-![Project image](./images/example.png](https://github.com/LionShareZoki/speck_app/blob/master/src/Project_image.png)
+![Project image](https://github.com/LionShareZoki/speck_app/blob/master/src/Project_image.png)
