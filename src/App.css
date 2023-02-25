@@ -1,7 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* General styles */
 .App {
   display: block;
-  padding: 4% 10%;
+  padding: 0% 10%;
 }
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #3d3d3d, #860000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Input and button styles */
 .input_and_button {
   display: flex;
   justify-content: space-between;
@@ -9,6 +25,66 @@
   margin-top: 3%;
   margin-bottom: 3%;
 }
+
+.input_container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 105%;
+}
+
+.input_container input[type="text"] {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.input_container input[type="text"]:focus {
+  background-color: #ffffff;
+}
+
+.add_button,
+.clear_button {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.add_button {
+  background-color: #ff5e5b;
+}
+
+.add_button:hover {
+  background-color: #ffffff;
+  color: #ff5e5b;
+  border: solid 1px #ff5e5b;
+}
+
+.clear_button {
+  background-color: #333333;
+}
+
+.clear_button:hover {
+  background-color: #555555;
+}
+
+.clear_button:active {
+  transform: translateY(1px);
+}
+
+/* Card styles */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -17,12 +93,63 @@
 }
 
 .card {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
   height: 60px;
   border-radius: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 48%;
-  padding: 0;
   margin-bottom: 2%;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: fade-in;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card:hover {
+  background-color: #efefefb9;
+  transition: 0.2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .card {
+    font-size: 13px;
+    width: 96%;
+  }
+
+  .heading {
+    font-size: 15px;
+    margin-bottom: 12%;
+  }
+
+  .input_and_button {
+    display: block;
+  }
+  .button_holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .clear_button {
+    width: 95%;
+  }
 }
