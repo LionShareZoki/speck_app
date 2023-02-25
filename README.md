@@ -25,19 +25,16 @@ Tech List requires the following to run:
 
 1. Clone the repository:
   
-  shCopy code
   
   `git clone https://github.com/LionShareZoki/speck_app.git`
   
 2. Install the dependencies:
-  
-  shCopy code
+
   
   `npm install`
   
 3. Run the app:
   
-  shCopy code
   
   `npm start`
   
